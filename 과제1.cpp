@@ -27,7 +27,7 @@ int main()
 	cout << "orange은 몇 개 있습니까?";
 	cin >> num3;//오렌지 개수입력
 
-	pay = price1 * num1 + price2 * num2 + price3 * num3- 500;
+	pay =( price1 * num1 + price2 * num2 + price3 * num3 ) - 500;
 	cout << "총" << pay << "원 입니다.";
 
 	return 0;
