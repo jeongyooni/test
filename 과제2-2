@@ -1,0 +1,34 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+int main()
+{
+	int n, a, b; // 변수 n,a,b 선언
+
+	cout << "N값을 입력하세요: "; //N의 값 입력받기
+	cin >> n;
+	if (n == 1)//N에 입력받은 수가 1일 때 * 출력
+	{
+		cout << "*";
+	}
+	else for(int a = 1; a <= n * 2; a++) //1이 아닌 경우 전체 행은 N*2가 된다
+	{
+		for (int b = 1; b <= n; b++)
+		{
+			if (a % 2 == 0) // 짝수인 경우
+			{
+				if (b % 2 == 0)
+					cout << "*";
+				else cout << " ";
+			}
+			else // 홀수인 경우
+			{
+				if (b % 2 == 0)
+					cout << " ";
+				else cout << "*";
+			}
+		}
+		cout << endl;
+	}
+}
